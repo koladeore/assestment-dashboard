@@ -1,0 +1,178 @@
+[
+  {
+    "eventName": "Annual Tech Conference",
+    "date": "2024-10-01",
+    "description": "A large-scale conference exploring the latest trends in technology, innovation, and digital transformation.",
+    "attendees": 1500,
+    "speakers": ["John Doe", "Elon Musk", "Satya Nadella"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "Machine Learning Workshop",
+    "date": "2024-09-20",
+    "description": "A hands-on workshop focusing on the latest machine learning techniques and their real-world applications.",
+    "attendees": 500,
+    "speakers": ["Jane Smith", "Andrew Ng", "Geoffrey Hinton"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "AI Expo 2024",
+    "date": "2024-11-05",
+    "description": "A global expo showcasing advancements in AI technology, from robotics to machine learning systems.",
+    "attendees": 2000,
+    "speakers": ["Elon Musk", "Fei-Fei Li", "Stuart Russell"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "Cybersecurity Seminar",
+    "date": "2024-09-18",
+    "description": "An in-depth seminar on the latest cybersecurity threats and defense strategies for enterprises.",
+    "attendees": 800,
+    "speakers": ["Bruce Wayne", "Kevin Mitnick", "Mikko Hyppönen"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "Data Science Bootcamp",
+    "date": "2024-08-30",
+    "description": "A comprehensive bootcamp designed to teach data science and analytics skills using real-world datasets.",
+    "attendees": 300,
+    "speakers": ["Alan Turing", "Clive Humby", "Hilary Mason"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "Web Development Webinar",
+    "date": "2024-10-15",
+    "description": "An online webinar covering the latest trends in web development, from front-end frameworks to backend solutions.",
+    "attendees": 600,
+    "speakers": ["Ada Lovelace", "Dan Abramov", "Brad Traversy"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "Cloud Computing Summit",
+    "date": "2024-11-20",
+    "description": "A summit gathering the top cloud computing experts to discuss the future of cloud infrastructure and services.",
+    "attendees": 1200,
+    "speakers": ["Jeff Bezos", "Satya Nadella", "Diane Greene"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "Blockchain Forum",
+    "date": "2024-10-10",
+    "description": "A forum for discussing the impact of blockchain technology on industries such as finance, healthcare, and logistics.",
+    "attendees": 700,
+    "speakers": ["Satoshi Nakamoto", "Vitalik Buterin", "Charles Hoskinson"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "Quantum Computing Talk",
+    "date": "2024-10-25",
+    "description": "A discussion on the advances in quantum computing and its potential to revolutionize industries.",
+    "attendees": 400,
+    "speakers": ["Richard Feynman", "David Deutsch", "John Preskill"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "Python for Beginners",
+    "date": "2024-09-15",
+    "description": "An introductory workshop to Python programming, aimed at beginners interested in data science and automation.",
+    "attendees": 200,
+    "speakers": ["Guido van Rossum", "Raymond Hettinger", "Jessica McKellar"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "React Conference",
+    "date": "2024-10-12",
+    "description": "A conference dedicated to React and its ecosystem, exploring advanced techniques and future roadmap.",
+    "attendees": 1000,
+    "speakers": ["Dan Abramov", "Kent C. Dodds", "Ryan Florence"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "Big Data Analytics",
+    "date": "2024-10-17",
+    "description": "A seminar on big data analytics, focusing on the use of large datasets to make informed business decisions.",
+    "attendees": 750,
+    "speakers": ["Clive Humby", "DJ Patil", "Cathy O'Neil"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "Digital Transformation Workshop",
+    "date": "2024-08-25",
+    "description": "A workshop on how businesses can leverage digital technologies to transform their operations and strategies.",
+    "attendees": 600,
+    "speakers": ["Satya Nadella", "Marc Benioff", "Sheryl Sandberg"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "Mobile App Development",
+    "date": "2024-09-22",
+    "description": "A workshop on building scalable and user-friendly mobile applications across different platforms.",
+    "attendees": 500,
+    "speakers": ["Steve Jobs", "Mark Zuckerberg", "Tim Cook"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "DevOps Engineering Summit",
+    "date": "2024-11-12",
+    "description": "A summit on best practices in DevOps engineering and the automation of software development workflows.",
+    "attendees": 800,
+    "speakers": ["Gene Kim", "Kelsey Hightower", "Patrick Debois"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "AI Ethics Conference",
+    "date": "2024-12-01",
+    "description": "A conference exploring ethical considerations in AI development and the implications for society.",
+    "attendees": 1000,
+    "speakers": ["Stuart Russell", "Kate Crawford", "Timnit Gebru"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "Augmented Reality Trends",
+    "date": "2024-09-10",
+    "description": "A seminar discussing the future of augmented reality and its applications in various industries.",
+    "attendees": 400,
+    "speakers": ["Tim Cook", "Alex Kipman", "Magic Leap"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "IoT Devices Expo",
+    "date": "2024-10-22",
+    "description": "An expo showcasing the latest advancements in IoT devices and their potential impact on smart homes and industries.",
+    "attendees": 600,
+    "speakers": ["Vint Cerf", "Kevin Ashton", "Evan Williams"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "Robotics in Industry",
+    "date": "2024-10-30",
+    "description": "A talk on the use of robotics in manufacturing, healthcare, and other industrial sectors.",
+    "attendees": 850,
+    "speakers": ["Elon Musk", "Rodney Brooks", "Cynthia Breazeal"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "AI in Healthcare",
+    "date": "2024-11-10",
+    "description": "A conference exploring how AI is transforming healthcare with predictive analytics and personalized medicine.",
+    "attendees": 1200,
+    "speakers": ["Fei-Fei Li", "Eric Topol", "Regina Barzilay"],
+    "status": "Completed"
+  },
+  {
+    "eventName": "Game Development Summit",
+    "date": "2024-12-05",
+    "description": "A summit focused on the latest trends and innovations in game development, from VR to AI integration.",
+    "attendees": 1500,
+    "speakers": ["John Carmack", "Hideo Kojima", "Shigeru Miyamoto"],
+    "status": "In Progress"
+  },
+  {
+    "eventName": "Startup Entrepreneurship",
+    "date": "2024-09-01",
+    "description": "A workshop aimed at aspiring entrepreneurs on how to start and scale successful startups.",
+    "attendees": 300,
+    "speakers": ["Paul Graham", "Reid Hoffman", "Peter Thiel"],
+    "status": "Completed"
+  }
+]

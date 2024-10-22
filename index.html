@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Dashboard Sidebar</title>
+</head>
+
+<body>
+  <!-- Hamburger Icon and logo mobile view -->
+   <div class="header-mobile">
+    <img src="./images/Logo Box.png" alt="log-img" class="logo-img" />
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+   </div>
+  <div class="sidebar">
+    <div>
+      <img src="./images/Logo Box.png" alt="log-img" class="logo-img" />
+      <ul class="sidebar-menu">
+        <li>
+          <img src="./images/home.png" alt="Home Icon" class="icon" />
+          <span>Home</span>
+        </li>
+        <li>
+          <img src="./images/Events.png" alt="Events Icon" class="icon" />
+          <span>Events</span>
+        </li>
+        <li>
+          <img src="./images/Speakers.png" alt="Speakers Icon" class="icon" />
+          <span>Speakers</span>
+        </li>
+        <li>
+          <img src="./images/Reports.png" alt="Reports Icon" class="icon" />
+          <span>Reports</span>
+        </li>
+        <li>
+          <img src="./images/Notification.png" alt="Notification Icon" class="icon" />
+          <span>Notifications</span>
+          <span class="notification-count">3</span>
+        </li>
+        <li>
+          <img src="./images/message.png" alt="Messages Icon" class="icon" />
+          <span>Messages</span>
+        </li>
+        <li>
+          <img src="./images/Settings.png" alt="Settings Icon" class="icon" />
+          <span>Settings</span>
+        </li>
+        <li class="collapse-btn">
+          <img src="./images/collapse.png" alt="collapse Icon" class="icon" />
+          <span>Collapse</span>
+        </li>
+        <div class="dark-mode-toggle">
+          <label class="switch">
+            <input type="checkbox" id="darkModeToggle" />
+            <span class="slider round"></span>
+          </label>
+          <span id="darkModeText" class="dark-mode-button">Dark mode</span>
+        </div>
+        <li class="profile">
+          <img src="./images/Avatar.png" alt="Profile Icon" class="icon" />
+          <div class="profile-info">
+            <span>Rudra Devi</span>
+            <span class="profile-email">rudra.devi@gmail.com</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Close Icon (visible when menu is open) -->
+    <div class="close-btn" onclick="toggleMenu()">
+      &times;
+    </div>
+  </div>
+  <!-- Main Dashboard Content -->
+  <div class="dashboard-content">
+    <h1 class="welcome-text">Welcome! here’s your summary</h1>
+    <!-- card -->
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Total Events</span>
+          <img src="./images/information.png" alt="information Icon" class="icon" />
+        </div>
+        <div class="card-body">
+          <span class="card-number">100,000</span>
+          <div class="card-stats">
+            <img src="./images/arrow-up-right.png" alt="arrow Icon" class="icon" />
+            <span class="stats-text">+5.0%</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Active Speakers</span>
+          <img src="./images/information.png" alt="information Icon" class="icon" />
+        </div>
+        <div class="card-body">
+          <span class="card-number">25</span>
+          <div class="card-stats">
+            <img src="./images/arrow-down-right.png" alt="arrow Icon" class="icon" />
+            <span class="stats-text-down">-5.0%</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Total Registrations</span>
+          <img src="./images/information.png" alt="information Icon" class="icon" />
+        </div>
+        <div class="card-body">
+          <span class="card-number">3000</span>
+          <div class="card-stats">
+            <img src="./images/arrow-up-right.png" alt="arrow Icon" class="icon" />
+            <span class="stats-text">+5.0%</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Total Revenue</span>
+          <img src="./images/information.png" alt="information Icon" class="icon" />
+        </div>
+        <div class="card-body">
+          <span class="card-number">$500,000</span>
+          <div class="card-stats">
+            <img src="./images/arrow-up-right.png" alt="arrow Icon" class="icon" />
+            <span class="stats-text">+5.0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Event Section -->
+    <div class="event-section">
+      <h2 class="event-heading">Event Registrations per Month</h2>
+      <div class="event-chart-carousel">
+        <!-- Column Chart -->
+        <div class="chart-container">
+          <canvas id="eventChart"></canvas>
+        </div>
+
+        <!-- Image Carousel -->
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="slides">
+              <div class="slide">
+                <img src="./images/Slide.png" alt="Slide 1" />
+                <div class="slide-text">
+                  <h2>Latest News & Updates</h2>
+                  <p>
+                    Turpis interdum nunc varius ornare dignissim pretium.
+                    Massa ornare quis aliquet sed vitae. Sed velit nisi,
+                    fermentum erat. Fringilla purus, erat fringilla tincidunt
+                    quisque non. Pellentesque in ut tellus.
+                  </p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./images/Slide1.png" alt="Slide 2" />
+                <div class="slide-text">
+                  <h2>Latest News & Updates</h2>
+                  <p>
+                    Turpis interdum nunc varius ornare dignissim pretium.
+                    Massa ornare quis aliquet sed vitae. Sed velit nisi,
+                    fermentum erat. Fringilla purus, erat fringilla tincidunt
+                    quisque non. Pellentesque in ut tellus.
+                  </p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./images/Slide2.png" alt="Slide 3" />
+                <div class="slide-text">
+                  <h2>Latest News & Updates</h2>
+                  <p>
+                    Turpis interdum nunc varius ornare dignissim pretium.
+                    Massa ornare quis aliquet sed vitae. Sed velit nisi,
+                    fermentum erat. Fringilla purus, erat fringilla tincidunt
+                    quisque non. Pellentesque in ut tellus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="prev-slide">
+            <img src="./images/left.png" alt="Previous Slide" class="arrow-image" />
+          </button>
+          <button class="next-slide">
+            <img src="./images/right.png" alt="Next Slide" class="arrow-image" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Event History Section -->
+    <div class="event-history-section">
+      <h2>Event History</h2>
+      <!-- Search and Sorting Controls -->
+      <div class="controls">
+        <div class="search-container" id="searchContainer">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <img src="./images/searchIcon.png" alt="searchIcon" class="searchIcon" />
+        </div>
+        <div class="sorting">
+          <div class="sort-option date" id="dateSort">
+            <span>Date</span>
+            <img src="./images/dropdownSort.png" alt="searchIcon" class="dropdownSort" />
+          </div>
+          <div class="sort-option" id="sortStatus" data-sort-order="asc">
+            <span>Status</span>
+            <img src="./images/dropdownSort.png" alt="statusIcon" class="dropdownSort" />
+          </div>
+          <div class="sort-option" id="sortName" data-sort-order="asc">
+            <span>Name</span>
+            <img src="./images/dropdownSort.png" alt="nameIcon" class="dropdownSort" />
+          </div>
+          <span class="results-text">Displaying 100 results</span>
+          <div class="sort-mostRecent">
+            <span class="sort-text">Sort:</span>
+            <div class="sort-option MostRecent" id="mostRecentSort">
+              <span>Most Recent</span>
+              <img src="./images/dropdownSort.png" alt="mostRecentIcon" class="dropdownSort" />
+            </div>
+          </div>
+          <div class="dotted-export">
+            <div class="dotted">
+              <img src="./images/dotted.png" alt="dottedIcon" class="" />
+            </div>
+            <div class="export-button" id="exportButton">
+              <img src="./images/exportImg.png" alt="searchIcon" class="" />
+              <span class="export-text">Export</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Event Table -->
+      <table class="event-history-table">
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Speaker</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="eventTableBody">
+          <!--Data -->
+        </tbody>
+      </table>
+      <!-- Pagination Section -->
+      <div class="paginate-and-rows-per-page">
+        <div class="pagination-container">
+          <button class="pagination-arrow" id="prevPage">
+            <img src="./images/left-arrow-paginate.png" alt="left-paginate" />
+          </button>
+          <div class="pagination-numbers">
+            <button class="pagination-number active-page" data-page="1">
+              1
+            </button>
+            <button class="pagination-number" data-page="2">2</button>
+            <button class="pagination-number" data-page="3">3</button>
+          </div>
+          <button class="pagination-arrow" id="nextPage">
+            <img src="./images/right-arrow-paginate.png" alt="left-paginate" />
+          </button>
+        </div>
+        <!-- Rows per page dropdown -->
+        <div class="rows-per-page">
+          <span>Show:</span>
+          <select id="rowsPerPage" class="rows-dropdown">
+            <option value="5">5 rows</option>
+            <option value="10" selected>10 rows</option>
+            <option value="20">20 rows</option>
+            <option value="50">50 rows</option>
+          </select>
+        </div>
+      </div>
+      <!-- Event Detail Modal -->
+      <div id="eventModal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2 id="modalEventName" class="modalEventName"></h2>
+          <p id="modalEventDate" class="modalEventDate"></p>
+          <p id="modalEventDescription" class="modalEventDes"></p>
+          <div class="modal-speakers-avatar">
+            <img src="./images/avatar1.png" alt="img-speakers" class="img1">
+            <img src="./images/avatar2.png" alt="img-speakers" class="img2">
+            <img src="./images/avatar3.png" alt="img-speakers" class="img3">
+          </div>
+          <p id="modalSpeakers" class="modalSpeakers"></p>
+          <p id="modalAttendees" class="modalAttendees"></p>
+          <div class="modal-actions-container">
+            <div class="modal-actions">
+              <div>
+                <button class="btn edit-btn">Edit</button>
+              </div>
+              <div class="delete-complete-btn">
+                <button class="btn delete-btn">Delete</button>
+                <button class="btn complete-btn">Mark as Completed</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./dashboard.js"></script>
+</body>
+
+</html>
