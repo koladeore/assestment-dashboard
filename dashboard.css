@@ -995,16 +995,4 @@ canvas {
     cursor: pointer;
     margin-right: 10px;
   }
-  /* Adds an arrow to the first cell in each row */
-  .event-history-table td:first-child::before {
-    content: "\25B6"; /* Right arrow */
-    margin-right: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-
-  /* Changes the arrow to down when the details are shown */
-  .event-history-table tr.open td:first-child::before {
-    content: "\25BC"; /* Down arrow */
-  }
 }
