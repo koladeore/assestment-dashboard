@@ -451,14 +451,14 @@ canvas {
   margin-left: 10px;
 }
 .dotted img {
-  margin-left: 7px;
+  margin-left: 4px;
   margin-top: 10px;
 }
 .sort-option span {
   color: #334155;
   font-size: 14px;
   font-weight: 400;
-  margin-left: 10px;
+  margin-left: 7px;
 }
 .dropdownSort {
   transition: transform 0.3s ease;
@@ -836,6 +836,27 @@ canvas {
 }
 .dark-mode .modal-actions {
   background-color: #ada9bb;
+}
+.dark-mode .export-button{
+  color: #ffffff;
+}
+.dark-mode .ExportIcon{
+  filter: invert(100%);
+}
+.dark-mode .dropdownSort{
+  filter: invert(100%);
+}
+.dark-mode .dot{
+  filter: invert(100%);
+}
+.dark-mode .right-paginate{
+  filter: invert(100%);
+}
+.dark-mode .left-paginate{
+  filter: invert(100%);
+}
+.dark-mode #searchInput {
+  color: #ffffff;
 }
 /* Mobile Layout (for screen sizes less than 768px) */
 @media (max-width: 768px) {

@@ -72,7 +72,7 @@
       </ul>
     </div>
     <!-- Close Icon (visible when menu is open) -->
-    <div class="close-btn" onclick="toggleMenu()">
+    <div class="hamburger" onclick="toggleMenu()">
       &times;
     </div>
   </div>
@@ -210,30 +210,30 @@
         <div class="sorting">
           <div class="sort-option date" id="dateSort">
             <span>Date</span>
-            <img src="./images/dropdownSort.png" alt="searchIcon" class="dropdownSort" />
+            <img src="./images/chevron-down.svg" alt="searchIcon" class="dropdownSort" width="20" height="20"/>
           </div>
           <div class="sort-option" id="sortStatus" data-sort-order="asc">
             <span>Status</span>
-            <img src="./images/dropdownSort.png" alt="statusIcon" class="dropdownSort" />
+            <img src="./images/chevron-down.svg" alt="statusIcon" class="dropdownSort" width="20" height="20" />
           </div>
           <div class="sort-option" id="sortName" data-sort-order="asc">
             <span>Name</span>
-            <img src="./images/dropdownSort.png" alt="nameIcon" class="dropdownSort" />
+            <img src="./images/chevron-down.svg" alt="nameIcon" class="dropdownSort" width="20" height="20"/>
           </div>
           <span class="results-text">Displaying 100 results</span>
           <div class="sort-mostRecent">
             <span class="sort-text">Sort:</span>
             <div class="sort-option MostRecent" id="mostRecentSort">
               <span>Most Recent</span>
-              <img src="./images/dropdownSort.png" alt="mostRecentIcon" class="dropdownSort" />
+              <img src="./images/chevron-down.svg" alt="mostRecentIcon" class="dropdownSort" width="20" height="20"/>
             </div>
           </div>
           <div class="dotted-export">
             <div class="dotted">
-              <img src="./images/dotted.png" alt="dottedIcon" class="" />
+              <img src="./images/dotted.svg" alt="dottedIcon" class="dot"  width="10" height="10"/>
             </div>
             <div class="export-button" id="exportButton">
-              <img src="./images/exportImg.png" alt="searchIcon" class="" />
+              <img src="./images/exportSvg.svg" alt="export-icon" class="ExportIcon" width="10" height="10">
               <span class="export-text">Export</span>
             </div>
           </div>
@@ -257,7 +257,7 @@
       <div class="paginate-and-rows-per-page">
         <div class="pagination-container">
           <button class="pagination-arrow" id="prevPage">
-            <img src="./images/left-arrow-paginate.png" alt="left-paginate" />
+            <img src="./images/left-arrow-paginate.svg" alt="left-paginate"  width="8" height="8" class="left-paginate"/>
           </button>
           <div class="pagination-numbers">
             <button class="pagination-number active-page" data-page="1">
@@ -267,7 +267,7 @@
             <button class="pagination-number" data-page="3">3</button>
           </div>
           <button class="pagination-arrow" id="nextPage">
-            <img src="./images/right-arrow-paginate.png" alt="left-paginate" />
+            <img src="./images/right-arrow-paginate.svg" alt="right-paginate" width="8" height="8" class="right-paginate"/>
           </button>
         </div>
         <!-- Rows per page dropdown -->
